@@ -1,0 +1,28 @@
+@font-face {
+	font-family: "SolomonSansNormal";
+	src: url("../fonts/SolomonSans/SolomonSansNormal.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "SolomonSansBlack";
+	src: url("../fonts/SolomonSans/SolomonSansBlack.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "OpenSans-Regular";
+	src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "OpenSans-Bold";
+	src: url("../fonts/OpenSans/OpenSans-Bold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
