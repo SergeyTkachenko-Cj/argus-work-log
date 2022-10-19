@@ -509,7 +509,7 @@ main .down svg {
 .what-we-do-block .green-block-left {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 5%;
 }
 .what-we-do-block .inner-wrapper {
     padding: 0 40px;
@@ -1681,6 +1681,10 @@ div.z-circle-message-button .z-c-m__close {
 }
 
 @media screen and (max-width: 1200px) {
+    .jc-sb.ai-c.fdbck {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .our-certificates .certs-slider .slide {
         width: 244px;
     }
@@ -1717,6 +1721,9 @@ div.z-circle-message-button .z-c-m__close {
     .what-we-do-block .block {
         width: calc(100% / 3 - 20px);
         padding: 25px 12px 40px;
+    }
+    .what-we-do-block .green-block-left {
+        display: none;
     }
     .what-we-do-block .inner-wrapper {
         padding: 0 20px;
