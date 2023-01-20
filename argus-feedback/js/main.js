@@ -38,9 +38,10 @@ $(function () {
 		$(this).parents('.response').stop().fadeOut();
 	});
 	$('.callback').on('click', function () {
-		var modal = $('.modal');
-		modal.addClass('opened').stop().fadeIn();
-		modal.find('#download-file').attr('disabled', true)
+		// var modal = $('.modal');
+		// modal.addClass('opened').stop().fadeIn();
+		// modal.find('#download-file').attr('disabled', true)
+		window.location.assign("https://khimki.hh.ru/vacancy/75777947?from=employer&hhtmFrom=employer");
 	});
 
 	$('.slider').slick({

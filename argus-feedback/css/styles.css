@@ -207,6 +207,7 @@ header .right-menu {
     position: relative;
 }
 header .right-menu .callback {
+    display: none;
     margin-left: 30px;
     box-shadow: none;
 }
@@ -302,6 +303,16 @@ main .inner-wrapper {
     background-image: url(../img/Sergey.jpg);
     background-size: 150%;
     background-position: -40px -55px;
+}
+.profile-seven,
+.profile-eight,
+.profile-nine,
+.profile-ten,
+.profile-eleven {
+    background-image: url(../img/placeholder.jpeg);
+    background-size: 125%;
+    background-position: -23px -26px;
+    /* filter: invert(75%); */
 }
 
 figure.snip1390 {
@@ -551,6 +562,9 @@ main .down svg {
     min-height: 856px;
     text-align: center;
     padding-bottom: 45px;
+}
+.what-we-do-block.grey-block {
+    background: none;
 }
 .what-we-do-block .green-block-left {
     position: absolute;
@@ -1099,7 +1113,7 @@ main .down svg {
 
 .how-much-block {
     padding-top: 98px;
-    padding-bottom: 150px;
+    /* padding-bottom: 150px; */
 }
 .how-much-block .how-much-wrapper {
     position: relative;
@@ -1141,7 +1155,7 @@ main .down svg {
     transform: translate(-50%, -50%);
 }
 .how-much-block .how-much .left .title {
-    font-size: 50px;
+    font-size: 32px;
     color: rgb(51, 51, 51);
     font-weight: 600;
     line-height: 1;
