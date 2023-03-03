@@ -41,7 +41,7 @@ $(function () {
 		// var modal = $('.modal');
 		// modal.addClass('opened').stop().fadeIn();
 		// modal.find('#download-file').attr('disabled', true)
-		window.location.assign("https://khimki.hh.ru/vacancy/75777947?from=employer&hhtmFrom=employer");
+		// window.location.assign("https://khimki.hh.ru/vacancy/75777947?from=employer&hhtmFrom=employer");
 	});
 
 	$('.slider').slick({
