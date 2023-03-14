@@ -48,13 +48,15 @@ $(function () {
 		modal.addClass('opened').stop().fadeIn();
 	});
 	$('.request-two').on('click', function () {
+		let whatBtn = $(this).attr('data-btn');
 		var modal = $('.form-5');
+		modal.find("#formNmb").attr('value', whatBtn);
 		modal.addClass('opened').stop().fadeIn();
 	});
-	$('.skachat-pdf').on('click', function () {
-		var modal = $('.form-4');
-		modal.addClass('opened').stop().fadeIn();
-	});
+	// $('.skachat-pdf').on('click', function () {
+	// 	var modal = $('.form-4');
+	// 	modal.addClass('opened').stop().fadeIn();
+	// });
 
 	var prevArrow = '<button class="prev-btn">\n' +
 		'                    <svg width="15" height="21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"\n' +
@@ -341,35 +343,35 @@ $(function () {
 		timer && clearTimeout(timer);
 	}
 
-	$('.how-much-block .next-btn').on('click', function () {
-		var currentStep = $('.steps-content .step.active'),
-			currentStepInput = currentStep.find('input'),
-			steps = $('.steps-content .step'),
-			index = getCurrentIndex('.steps-content .step');
+	// $('.how-much-block .next-btn').on('click', function () {
+	// 	var currentStep = $('.steps-content .step.active'),
+	// 		currentStepInput = currentStep.find('input'),
+	// 		steps = $('.steps-content .step'),
+	// 		index = getCurrentIndex('.steps-content .step');
 
-		if (index < steps.length - 2) {
-			for (var i = 0; i < currentStepInput.length; i++) {
-				if (currentStepInput.eq(i).prop('checked')) {
-					moveToNextStep(currentStepInput[i].value);
-					break;
-				}
-			}
-		} else if (index === steps.length - 2) {
-			var modal = $('.form-3');
-			$('.steps-content input:checked').each(function () {
-				$('.form-3 input[name=' + $(this).attr('name') + ']').val($(this).val());
-			});
-			if ($('.steps-content .step.active').find('input:checked').length === 1) {
-				modal.addClass('opened').stop().fadeIn();
-			}
-		} else if (index === steps.length - 1) {
-			$('.steps .step').removeClass('active current');
-			$('.steps .step').eq(0).addClass('active current');
-			$('.steps-content .step').removeClass('active');
-			$('.steps-content .step').eq(0).addClass('active');
-			$('.how-much-block .next-btn').text('Дальше');
-		}
-	});
+	// 	if (index < steps.length - 2) {
+	// 		for (var i = 0; i < currentStepInput.length; i++) {
+	// 			if (currentStepInput.eq(i).prop('checked')) {
+	// 				moveToNextStep(currentStepInput[i].value);
+	// 				break;
+	// 			}
+	// 		}
+	// 	} else if (index === steps.length - 2) {
+	// 		var modal = $('.form-3');
+	// 		$('.steps-content input:checked').each(function () {
+	// 			$('.form-3 input[name=' + $(this).attr('name') + ']').val($(this).val());
+	// 		});
+	// 		if ($('.steps-content .step.active').find('input:checked').length === 1) {
+	// 			modal.addClass('opened').stop().fadeIn();
+	// 		}
+	// 	} else if (index === steps.length - 1) {
+	// 		$('.steps .step').removeClass('active current');
+	// 		$('.steps .step').eq(0).addClass('active current');
+	// 		$('.steps-content .step').removeClass('active');
+	// 		$('.steps-content .step').eq(0).addClass('active');
+	// 		$('.how-much-block .next-btn').text('Дальше');
+	// 	}
+	// });
 
 	function moveToNextStep(check) {
 		var current = $('.step.active.current'),

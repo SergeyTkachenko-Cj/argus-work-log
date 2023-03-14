@@ -325,15 +325,30 @@ main .inner-wrapper {
     background-size: 150%;
     background-position: -40px -55px;
 }
-.profile-seven,
-.profile-eight,
-.profile-nine,
-.profile-ten,
+.profile-seven {
+    background-image: url(../img/anastasia.jpeg);
+    background-size: 280%;
+    background-position: -80px -180px;
+}
+.profile-nine {
+    background-image: url(../img/maria.jpeg);
+    background-size: 290%;
+    background-position: -115px -200px;
+}
+.profile-eight {
+    background-image: url(../img/petrova.jpeg);
+    background-size: 130%;
+    background-position: -15px -55px;
+}
+.profile-ten {
+    background-image: url(../img/yambla.jpeg);
+    background-size: 150%;
+    background-position: -40px -85px;
+}
 .profile-eleven {
-    background-image: url(../img/placeholder.jpeg);
-    background-size: 125%;
-    background-position: -23px -26px;
-    /* filter: invert(75%); */
+    background-image: url(../img/buyavec.jpeg);
+    background-size: 150%;
+    background-position: -45px -35px;
 }
 
 figure.snip1390 {
@@ -389,7 +404,7 @@ figure.snip1390 blockquote {
   /* box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3); */
   text-align: left;
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 figure.snip1390 blockquote:before {
@@ -901,11 +916,12 @@ main .down svg {
     color: rgb(51, 51, 51);
     line-height: 1.8;
     margin-right: 100px;
+    margin-left: 100px;
     margin-bottom: 35px;
     transition: .3s;
 }
 .document-list-block-two .document-list li:last-child {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .document-list-block-two .toggle-list {
     font-size: 24px;
@@ -1001,7 +1017,7 @@ main .down svg {
     margin-bottom: 40px;
 }
 .quote {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     color: rgba(51, 51, 51, .75);
     line-height: 1.714;
@@ -1601,14 +1617,14 @@ footer .footer-row {
     height: 110px;
 }
 footer .footer-row .phone {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     color: rgb(51, 51, 51);
     line-height: 1.2;
     margin-left: auto;
 }
 footer .footer-row .text {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     color: rgb(51, 51, 51);
     line-height: 1.2;
@@ -2358,14 +2374,16 @@ div.z-circle-message-button .z-c-m__close {
 }
 @media screen and (min-width: 867px) {
 .document-list-block-two .document-list li {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 1.8;
     margin-bottom: 20px;
 }
 }
 @media screen and (max-width: 867px) {
     .document-list-block-two .document-list li {
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: 500;
         line-height: 1.8;
         margin-bottom: 20px;
         margin-left: 0;
