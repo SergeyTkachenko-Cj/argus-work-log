@@ -144,6 +144,14 @@ b {
     margin-bottom: 2rem;
     font-weight: 500;
 }
+.vid2 {
+    display: none;
+    margin: 0 auto;
+}
+.vid1 {
+    display: block;
+    margin: 0 auto;
+}
 input::-webkit-input-placeholder {
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
@@ -2388,6 +2396,12 @@ div.z-circle-message-button .z-c-m__close {
         margin-bottom: 20px;
         margin-left: 0;
         margin-right: 0;
+    }
+    .vid2 {
+        display: block;
+    }
+    .vid1 {
+        display: none;
     }
     }
 @media screen and (min-width: 768px) {
